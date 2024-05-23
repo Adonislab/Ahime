@@ -1,5 +1,25 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+# ScreenShots 
+
+# Login
+
+![image](https://user-images.githubusercontent.com/90745903/221921832-6b784eab-e22e-4755-8987-dcef714a7023.png)
+
+# Register
+
+![image](https://user-images.githubusercontent.com/90745903/221921874-533539cb-8045-493e-99d2-fcd6b81dbf3b.png)
+
+# Home Page
+
+
+# validation  using Joi
+
+![image](https://user-images.githubusercontent.com/90745903/221922330-131d54f8-7f14-4d3c-a109-77c08f572791.png)
+
+![image](https://user-images.githubusercontent.com/90745903/221922635-c5479765-f0a5-4984-915a-c05e5e839554.png)
+
+
 ## Getting Started
 
 First, run the development server:
@@ -10,13 +30,15 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
