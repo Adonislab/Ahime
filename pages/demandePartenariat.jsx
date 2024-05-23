@@ -152,7 +152,7 @@ export default function Setting() {
                     />
 
                     <p className="text-xl text-white-400 dark:text-white">
-                        Allô Group, le sens de l'engagement !
+                        Ahime, le sens de l'engagement !
                     </p>
                 </div>
 

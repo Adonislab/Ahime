@@ -151,32 +151,32 @@ function Dashboard() {
 
       </div>
       <div className="p-4 border border-gray-20 border-dashe rounded-lg dark:border-orange-500 mt-14">
-        {/* <p className="mt-4 text-2xl text-orange-500"> Quelles sont les grandes tendances marchandes de Allô Group ?</p> */}
+        {/* <p className="mt-4 text-2xl text-orange-500"> Quelles sont les grandes tendances marchandes de Ahime Group ?</p> */}
         <MarchandTable />
       </div>
       <div className="p-4 border border-gray-20 border-dashe rounded-lg dark:border-orange-500 mt-14">
         <div>
-          <p className="text-2xl text-orange-500">Les spécialités de cuisine au sein des restaurants Allô Food</p>
+          <p className="text-2xl text-orange-500">Les spécialités de cuisine au sein des restaurants Ahime Food</p>
           <MarchandsChart />
         </div>
       </div>
       <div className="p-4 border border-gray-20 border-dashe rounded-lg dark:border-orange-500 mt-14">
-        {/* <p className="mt-4 text-2xl text-orange-500"> Quelles sont les grandes tendances marchandes de Allô Group ?</p> */}
+        {/* <p className="mt-4 text-2xl text-orange-500"> Quelles sont les grandes tendances marchandes de Ahime Group ?</p> */}
         <BoutiqueTable />
       </div>
       <div className="p-4 border border-gray-20 border-dashe rounded-lg dark:border-orange-500 mt-14">
         <div>
-          <p className="text-2xl text-orange-500">Les spécialités au sein des boutiques Allô Market</p>
+          <p className="text-2xl text-orange-500">Les spécialités au sein des boutiques Ahime Market</p>
           <BoutiquesChart />
         </div>
       </div>
       <div className="p-4 border border-gray-20 border-dashe rounded-lg dark:border-orange-500 mt-14">
-        {/* <p className="mt-4 text-2xl text-orange-500"> Quelles sont les grandes tendances marchandes de Allô Group ?</p> */}
+        {/* <p className="mt-4 text-2xl text-orange-500"> Quelles sont les grandes tendances marchandes de Ahime Group ?</p> */}
         <EventTable/>
       </div>
       <div className="p-4 border border-gray-20 border-dashe rounded-lg dark:border-orange-500 mt-14">
         <div>
-          <p className="text-2xl text-orange-500">Les spécialités des gestionnaires Allô Event</p>
+          <p className="text-2xl text-orange-500">Les spécialités des gestionnaires Ahime Event</p>
           <EventChart />
         </div>
       </div>

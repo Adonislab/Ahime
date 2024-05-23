@@ -24,7 +24,7 @@ const Testimonial = () => {
               className="w-20 h-20 rounded-full"
           />
           <p className="text-gray-700 mt-4">
-          Le service de livraison d'Allô Group a transformé notre expérience d'achat en ligne. 
+          Le service de livraison d'Ahime a transformé notre expérience d'achat en ligne. 
           Les colis arrivent toujours à temps, en parfait état, et le suivi en temps réel apporte une
            tranquillité d'esprit inestimable
           </p>

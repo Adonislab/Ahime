@@ -113,7 +113,7 @@ export default function Champion() {
           role:"Livreur",
         }, { merge: true });
       
-      toast.success('Vous êtes désormais un champion Allo Group');
+      toast.success('Vous êtes désormais un champion Ahime Group');
       setTimeout(() => {
         Router.push("/dashboardChampion");
       }, 2000);
