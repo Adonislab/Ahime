@@ -135,7 +135,7 @@ export default function notification() {
       <div className="p-4 border border-gray-20 border-dashe rounded-lg dark:border-orange-500 mt-14">
         <div className="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-blue-500">
           <p className="text-xl text-white-400 dark:text-white">
-          Allo Group, le sens de l'engagement !!! 
+          Ahime, le sens de l'engagement !!! 
           </p>
         </div>
 

@@ -129,7 +129,7 @@ export default function Marchand() {
           shopkeeper:true,
           role:"Shopkeeper",
         }, { merge: true });
-        toast.success('Vous êtes désormais un marchand chez Allo Group');
+        toast.success('Vous êtes désormais un marchand chez Ahime');
         setTimeout(() => {
           Router.push("/chatboutique");
         }, 2000);

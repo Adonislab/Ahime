@@ -131,7 +131,7 @@ export default function GestionnaireEvent() {
           event:true,
           role:"Event",
         }, { merge: true });
-        toast.success('Vous êtes désormais un gestionnaire évenementiel chez Allo Group');
+        toast.success('Vous êtes désormais un gestionnaire évenementiel chez Ahime');
         setTimeout(() => {
           Router.push("/chatEvent");
         }, 2000);

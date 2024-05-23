@@ -117,7 +117,7 @@ export default function Users() {
           />
 
           <p className="text-xl text-white-400 dark:text-white">
-            Allo Group, le sens de l'engagement !!! 
+            Ahime, le sens de l'engagement !!! 
           </p>
         </div>
 

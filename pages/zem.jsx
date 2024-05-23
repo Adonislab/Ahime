@@ -113,7 +113,7 @@ export default function Zem() {
           role:"Chauffeur",
         }, { merge: true });
       
-      toast.success('Vous êtes désormais un chauffeur Allo Group');
+      toast.success('Vous êtes désormais un chauffeur Ahime');
       setTimeout(() => {
         Router.push("/dashboardChauffeur");
       }, 2000);

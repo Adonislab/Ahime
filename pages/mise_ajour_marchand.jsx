@@ -129,7 +129,7 @@ export default function Marchand() {
           marchand:true,
           role:"Marchand",
         }, { merge: true });
-        toast.success('Vous êtes désormais un marchand chez Allo Group');
+        toast.success('Vous êtes désormais un marchand chez Ahime');
         setTimeout(() => {
           Router.push("/chat");
         }, 2000);
