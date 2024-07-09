@@ -94,45 +94,47 @@ export default function Setting() {
     };
 
     const handleSubmit = async (e) => {
-        e.preventDefault();
+            e.preventDefault();
 
-        try {
-            if (formData.selectedFile) {
-                const newImageURL = await uploadImageToFirebase(formData.selectedFile);
-                // const newImageURL1 = await uploadImageToFirebase(formData.selectedFile1);
+            try {
+                if (formData.selectedFile) {
+                    const newImageURL = await uploadImageToFirebase(formData.selectedFile);
 
-                // Mettre à jour le champ avatar dans Firebase Firestore avec l'URL de l'image
+                    const { fullName, phoneNumber, categorie, details, email, id } = formData;
+                    const userId = auth.currentUser.uid;
+                    const docRef = collection(db, 'administrateur');
+                    const docRefusers = doc(docRef, 'admin');
+                    const docSnapshotUsers = await getDoc(docRefusers);
 
-                const { fullName, phoneNumber, categorie, details, email, id } = formData;
-                const userId = auth.currentUser.uid;
-                const docRef = collection(db, 'administrateur');
-                const docRefusers = doc(docRef, 'admin');
-                const docSnapshotUsers = await getDoc(docRefusers);
-                const userData = docSnapshotUsers.data();
+                    if (!docSnapshotUsers.exists()) {
+                        // Si le document n'existe pas, créez-le avec setDoc
+                        await setDoc(docRefusers, {
+                            examen: []
+                        });
+                    }
 
+                    // Ajoutez les données au champ "examen" du document
+                    await updateDoc(docRefusers, {
+                        examen: arrayUnion({
+                            fullName: fullName,
+                            phoneNumber: phoneNumber,
+                            idCard: newImageURL,
+                            categorie: categorie,
+                            details: details,
+                            email: email,
+                            id: id,
+                            approuve: false
+                        }),
+                    });
 
-                // Add the data to the "examen" array field
-                await updateDoc(docRefusers, {
-                    examen: arrayUnion({
-                        fullName: fullName,
-                        phoneNumber: phoneNumber,
-                        idCard: newImageURL,
-                        categorie: categorie,
-                        details: details,
-                        email: email,
-                        id:id,
-                        approuve : false
-                    }),
-                });
-            }
-
-            toast.success('Votre demande est en cours de traitement. Nous vous reviendrons dans 1h');
-            setTimeout(() => {
-                Router.push("/politique");
-            }, 2000);
-        } catch (error) {
-            console.error('Echec d\'envoi', error);
-            toast.error('Echec d\'envoi');
+                    toast.success('Votre demande est en cours de traitement. Nous vous reviendrons dans 1h');
+                    setTimeout(() => {
+                        Router.push("/politique");
+                    }, 2000);
+                }
+            } catch (error) {
+                console.error('Echec d\'envoi', error);
+                toast.error('Echec d\'envoi');
         }
     };
 
