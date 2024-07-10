@@ -80,8 +80,8 @@
 
 
 import React from "react";
-import PickMeals from "../../../utils/Assets/pick-meals-image.png";
-import DeliveryMeals from "../../../utils/Assets/delivery-image.png";
+import PickMeals from "../../../utils/Assets/market-3266880_1280.jpg";
+import DeliveryMeals from "../../../utils/Assets/market-3304310_1280.jpg";
 import Image from 'next/image'
 
 const Work = () => {
